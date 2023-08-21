@@ -1,0 +1,41 @@
+header
+  // Begin call to action header
+  .container-fluid.brandBlueBack
+    .row.justify-content-center.text-center
+      .col-8.py-2
+        button.btn.btn-warning(type='button')  Register Today 
+      | &grave;
+  // End call to action header
+  // Begin Nav
+  nav.navbar.navbar-expand-lg.bg-body-tertiary.border.border-warning.fw-bold.fs-3.py-0
+    .container-fluid
+      a.navbar-brand(href='/')
+        img(src='images/logofiles/Avocy_StandardLogo-200px.png' alt='Avocy' height='75px')
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end.container-fluid
+        ul.navbar-nav.align-items-center
+          li.nav-item.dropdown.mx-2.container-fluid
+            button.btn.btn-dark.btn-lg.dropdown-toggle(onclick="location.href='telehealth'" data-bs-toggle='dropdown' aria-expanded='false')
+              | Telehealth Therapy
+            ul.dropdown-menu.dropdown-menu-dark
+              li
+                a.dropdown-item(href='#') How It Works
+              li
+                a.dropdown-item(href='#') Benefits
+              li
+                a.dropdown-item(href='#') Clinical
+              li
+                a.dropdown-item(href='#') Costs &amp; Payments
+          li.nav-item.dropdown.container-fluid(class='`mx-2')
+            button.btn.btn-dark.btn-lg
+              | Insurance
+          li.nav-item.mx-2.container-fluid
+            button.btn.btn-dark.btn-lg
+              | About
+          li.nav-item.mx-2.container-fluid
+            button.btn.btn-dark.btn-lg
+              | Contact
+          li.nav-item.dropdown.mx-2.mb-3.mb-lg-0.container-fluid
+            button.btn.container-fluid.btn-lg.btn-warning(type='button') Login
+  // End Nav
